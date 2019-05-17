@@ -1,0 +1,49 @@
+{
+  "name": "nodets-jgm",
+  "version": "1.0.0",
+  "description": "NPM package as a global command to init new Node.js TypeScript project with JWT, GraphQL and MongoDB",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "npx tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mk0y/nodets-jgm.git"
+  },
+  "keywords": [
+    "Node",
+    "Nodejs",
+    "Node.js",
+    "TypeScript",
+    "JWT",
+    "GraphQL",
+    "MongoDB"
+  ],
+  "author": "Marko Jakic (mk0y)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mk0y/nodets-jgm/issues"
+  },
+  "homepage": "https://github.com/mk0y/nodets-jgm#readme",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "express": "^4.17.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
