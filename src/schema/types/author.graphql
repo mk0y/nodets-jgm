@@ -1,0 +1,16 @@
+# import Book from "./book.graphql"
+
+type Author {
+  id: ID!
+  name: String!
+  age: Int
+  books: [Book]
+}
+
+type Query {
+  authors: [Author]
+}
+
+type Mutation {
+  addAuthor(name: String!, age: Int): Author
+}

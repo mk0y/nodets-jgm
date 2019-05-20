@@ -1,0 +1,2 @@
+# import Query.*, Mutation.* from "author.graphql"
+# import Query.*, Mutation.* from "book.graphql"
