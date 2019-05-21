@@ -10,7 +10,6 @@ const bookSchema = new Schema({
 bookSchema.pre('save', function(next) {
   const authorId = this.toObject().author
   Author.findById(authorId).then(function(authorDoc) {
-    console.log('authorDoc', authorDoc)
     if (!authorDoc) {
       next(new Error('Author not found'))
     } else {

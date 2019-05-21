@@ -1,3 +1,4 @@
+// tslint:disable: no-console
 import express, { Application, Request, Response } from 'express'
 import grapqlHTTP from 'express-graphql'
 import mongoose from 'mongoose'

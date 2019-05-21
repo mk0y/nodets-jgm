@@ -10,7 +10,6 @@ const resolvers = {
   Author: authorResolvers.Author,
   Book: bookResolvers.Book,
 }
-console.log('resolvers', resolvers)
 
 const schema = makeExecutableSchema({
   resolvers,
