@@ -5,6 +5,7 @@ import schema from './schema/schema'
 
 const DB_NAME = 'mdev'
 mongoose.connect(`mongodb://localhost:27017/${DB_NAME}`, {
+  useCreateIndex: true,
   useNewUrlParser: true,
 })
 mongoose.connection.once('open', () => {

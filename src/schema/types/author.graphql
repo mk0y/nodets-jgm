@@ -4,11 +4,12 @@ type Author {
   id: ID!
   name: String!
   age: Int
-  books: [Book]
+  Books: [Book]
 }
 
 type Query {
-  authors: [Author]
+  Author(id: ID!): Author
+  AllAuthors: [Author]
 }
 
 type Mutation {

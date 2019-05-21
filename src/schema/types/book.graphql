@@ -4,14 +4,14 @@ type Book {
   id: ID!
   name: String!
   genre: String
-  author: Author
+  Author: Author!
 }
 
 type Query {
-  books: [Book]
-  book(id: Int!): Book
+  Book(id: ID!): Book
+  AllBooks: [Book]
 }
 
 type Mutation {
-  addBook(name: String!, genre: String): Book
+  addBook(name: String!, authorId: ID!, genre: String): Book
 }
