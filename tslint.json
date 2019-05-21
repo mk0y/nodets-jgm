@@ -10,6 +10,6 @@
     "rules": {
         "prettier": true,
         "no-empty": false,
-        "only-arrow-functions": false,
+        "only-arrow-functions": false
     }
 }
